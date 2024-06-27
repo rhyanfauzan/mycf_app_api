@@ -1,23 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "",
-    "database": "mycf_app",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "root",
-    "password": "",
-    "database": "mycf_app",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "root",
-    "password": "",
-    "database": "mycf_app",
-    "host": "127.0.0.1",
+    "username": "u1024490_cfadmin24",
+    "password": "cfadmin24",
+    "database": "u1024490_mycf_app",
+    "host": "localhost",
     "dialect": "mysql"
   }
 }

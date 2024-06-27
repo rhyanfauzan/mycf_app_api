@@ -15,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Budget.init({
     userId: DataTypes.INTEGER,
+    label: DataTypes.STRING,
     category: DataTypes.STRING,
     amount: DataTypes.FLOAT
   }, {

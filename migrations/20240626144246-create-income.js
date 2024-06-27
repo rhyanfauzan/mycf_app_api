@@ -15,6 +15,9 @@ module.exports = {
       amount: {
         type: Sequelize.FLOAT
       },
+      label: {
+        type: Sequelize.STRING
+      },
       source: {
         type: Sequelize.STRING
       },

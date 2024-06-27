@@ -17,6 +17,9 @@ module.exports = {
                     type: 'number',
                     format: 'float',
                   },
+                  label: {
+                    type: 'string',
+                  },
                   category: {
                     type: 'string',
                   },

@@ -4,9 +4,9 @@ const { Expense } = require('../models');
 const { Op } = require('sequelize');
 
 router.post('/', async (req, res) => {
-    const { userId, amount, category, date } = req.body;
+    const { userId, label, amount, category, date } = req.body;
     try {
-        const expense = await Expense.create({ userId, amount, category, date });
+        const expense = await Expense.create({ userId, label, amount, category, date });
         res.status(201).json(expense);
     } catch (error) {
         res.status(400).json({ error: error.message });

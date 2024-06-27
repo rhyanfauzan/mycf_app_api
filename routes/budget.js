@@ -3,9 +3,9 @@ const router = express.Router();
 const { Budget } = require('../models');
 
 router.post('/', async (req, res) => {
-    const { userId, category, amount } = req.body;
+    const { userId, label, category, amount } = req.body;
     try {
-        const budget = await Budget.create({ userId, category, amount });
+        const budget = await Budget.create({ userId, label, category, amount });
         res.status(201).json(budget);
     } catch (error) {
         res.status(400).json({ error: error.message });
