@@ -16,7 +16,9 @@ router.post('/', async (req, res) => {
 router.get('/:userId', async (req, res) => {
     const { userId } = req.params;
     try {
-        const expenses = await Expense.findAll({ where: { userId } });
+        const expenses = await Expense.findAll({ where: { userId }, 
+            order: [['date', 'DESC']] // Sort by date in descending order
+        });
         res.status(200).json(expenses);
     } catch (error) {
         res.status(400).json({ error: error.message });
@@ -33,7 +35,8 @@ router.get('/:userId/date', async (req, res) => {
                 date: {
                     [Op.between]: [new Date(startDate), new Date(endDate)]
                 }
-            }
+            },
+            order: [['date', 'DESC']] // Sort by date in descending order
         });
         res.status(200).json(expenses);
     } catch (error) {

@@ -14,11 +14,12 @@ const options = {
       version: '1.0.0',
       description: 'API documentation for the Cashflow App',
     },
-    servers: [
-      {
-        url: 'http://localhost:3000',
-      },
-    ],
+    // servers: [
+    //   {
+    //     // url: 'http://localhost:3000', // dev loval
+    //     url: 'https://apimycf.zethansa.com/api-docs', // dev server
+    //   },
+    // ],
     paths: {
       ...userPaths,
       ...incomePaths,

@@ -5,5 +5,19 @@
     "database": "u1024490_mycf_app",
     "host": "localhost",
     "dialect": "mysql"
+  },
+  "test": {
+    "username": "u1024490_cfadmin24",
+    "password": "cfadmin24",
+    "database": "u1024490_mycf_app",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "u1024490_cfadmin24",
+    "password": "cfadmin24",
+    "database": "u1024490_mycf_app",
+    "host": "localhost",
+    "dialect": "mysql"
   }
 }
